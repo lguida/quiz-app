@@ -1,0 +1,137 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+/* color scheme:
+#E0E2DB  mid grey
+#D2D4C8  light grey
+#2E3532  dark grey
+#8B2635  red
+#D3EFBD  green
+
+*/
+* {
+  background-color: #cdcdcd;
+  color: #011638;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+h1, p, .begin-label{
+  text-align: center;
+  color: #2E3532;
+}
+
+button {
+  display: block;
+  margin: auto;
+}
+
+.submit-answer{
+  display: block;
+  margin: auto;
+}
+
+h1{
+  padding-top: 21px;
+  padding-bottom: 20px;
+  width: 300px; /* adjust for media first*/
+  border-style: solid;
+  border-color: #011638;
+  border-radius: 8px;
+  background-color: #e1f3ea;
+  margin-left: auto;
+  margin-right: auto;
+  color:#011638;
+}
+
+.question-page, .start-page, .quiz-end{
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #011638;
+  background-color:  #e1f3ea;
+  width: 98%;   /*this is for fullscreen, change this for mobile-first/media query */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.question, .answer-options, label, .submit-answer, .qn-form, .scoring, p {
+  background-color: #e1f3ea;
+}
+
+.answer-options{
+  margin: auto;
+  width: 70%; /* adjust for media first*/
+  padding: 20px 0;
+}
+
+.question{
+  text-align: center;
+  margin-bottom: 0;
+}
+.scoring{
+  text-align: center;
+  padding: 0;
+}
+
+.correct{
+  border-style: solid;
+  border-color: #66a337;
+  background-color: #D3EFBD;
+  padding: 10px 10px;
+  margin: 20px auto;
+  width: 250px; /* adjust for media first*/
+  text-align: center;
+}
+
+.incorrect{
+  border-style: solid;
+  border-color: #8B2635;
+  background-color: #cab1b5;
+  padding: 10px 10px;
+  margin: 20px auto;
+  width: 80%; /* adjust for media first*/
+  text-align: center;
+}
+
+button, .submit-answer{
+  border: solid;
+  border-color: #011638;
+  border-radius: 8px;
+  background-color: #364156;
+  color: white;
+  padding: 10px 24px;
+  transition-duration: 0.2s;
+}
+
+.start-page button, .quiz-end button{
+  margin-bottom: 20px;
+}
+
+button:hover, .submit-answer:hover{
+  color:  #011638;
+  background-color: white;
+}
+
+
+
+@media all and (min-width: 800px){
+  .incorrect{
+  width: 600px;
+  }
+
+  .correct, h1{
+    width: 300px;
+  }
+
+  .answer-options{
+    width: 500px;
+  }
+
+  .question-page, .start-page, .quiz-end{
+    width: 800px;
+  }
+}
