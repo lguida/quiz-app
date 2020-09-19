@@ -1,1 +1,1 @@
-### Boilerplate app structure for Quiz App project
+### Quiz app project: a brief, 5 question quiz on Psychology.
